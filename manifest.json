@@ -1,0 +1,17 @@
+{
+    "name": "Impulse Price Checker",
+    "description": "Checks and compares prices over time and across platforms",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup/popup.html", 
+        "default_icon": "images/money.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"] ,
+        "js": ["src/content.js"]
+    }],
+    "host-permissions":[
+        "http://locolhost:9090/*"
+    ]
+}
