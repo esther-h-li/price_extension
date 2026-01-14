@@ -115,35 +115,16 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
 });
 
-
-//Sends an HTTP request to the backend to send the product details
- 
-
-fetch("http://localhost:8080/prices", {
-    method: "POST", //Indicating that this is sending data 
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify(product)
+//Sends the product to the background script
+chrome.runtime.sendMessage({action: "getProduct", product}, (response)=>{
+    if (!response) {
+        return;
+    }
+    if(response.success){
+        console.log(response.data);
+    }
+    else{
+        console.error(response.error)
+    }
 })
-
-// Handles server response
- 
-
-.then(response => {
-    console.log(response.status);
-    return response.text();
-})
-
-// Handles parsed text
- 
-
-.then(text => {
-    console.log(text);
-})
-
-// Handles error cases
- .catch(error =>{
-    console.error(error);
- })
 
