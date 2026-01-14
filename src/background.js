@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 //Sends an HTTP request to the backend to send the product details
  if(request.action == "getProduct"){
-fetch("https://arabella-shadowed-jeanice.ngrok-free.dev/product", {
+fetch("https://impulse-price-extension-766562537509.northamerica-northeast1.run.app/product", {
     method: "POST", //Indicating that this is sending data 
     headers: {
         "Content-Type": "application/json"
