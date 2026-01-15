@@ -1,1 +1,1 @@
-Frontend for a price comparison chrome extension. If you just download this, it will show the current product you are on in eBay.
+Frontend for a price comparison chrome extension. If you just download this, it will show the current product you are on in eBay. 

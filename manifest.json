@@ -1,6 +1,6 @@
 {
     "name": "Impulse Price Checker",
-    "description": "Checks and compares prices over time and across platforms",
+    "description": "While shoppipng on eBay, this extension can use the current produuct you're on and find identical listings and their prices. ",
     "version": "1.0.0",
     "manifest_version": 3,
     "action": {
@@ -15,6 +15,6 @@
         "js": ["src/content.js"]
     }],
     "host-permissions":[
-        "http://locolhost:9090/*"
+        "http://localhost:9090/*"
     ]
 }
