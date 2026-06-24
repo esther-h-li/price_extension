@@ -1,7 +1,7 @@
 {
     "name": "Impulse Price Checker",
-    "description": "While shopping on eBay, this extension can use the current product you're on and find identical listings and their prices. ",
-    "version": "1.0.0",
+    "description": "While shopping on eBay, this extension can use the current product you're on and find similar listings and their prices. ",
+    "version": "1.0.1",
     "manifest_version": 3,
     "action": {
         "default_popup": "popup/popup.html", 
